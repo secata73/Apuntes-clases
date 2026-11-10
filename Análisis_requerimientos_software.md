@@ -198,3 +198,89 @@ Ejemplo: "el sistema debe permitir registrar un nuevo cliente
 
 No funcional: Describen sobre CÓMO debe hacerlo: rendimiento, seguridad, usabilidad, disponibilidad.
 Ejemplo: "El sistema debe responder en menos de 2 segundos."
+
+Ejemplo real app de salud
+
+Requerimientos funcionales
+1. El paciente puede agendar
+2. El paciente puede cancelar
+3. El paciente puede reprogramar una cita
+
+Requerimientos no funcionales
+4. (seguridad) los datos médicos deben cifrarse confrome a la normativa de protección de datos 
+5. rendimiento: la búsqueda de citas disponibles debe responder en menos de 3 segundos 
+---
+Proceso de la ingeniería de requerimientos
+
+Elicitación: 
+Todas las actividades relacionadas con el descubrimiento de las necesidades reales que el sistema dee satisfacer, mediante entrevistas con: los interesados y los ususarios que se afectan así como el análisis de documentos
+
+Análisis: 
+implica llegar a una comprensíón más rica y precisa de cada requisito y representar conjuntos de requisitos de múltiples maneras. 
+Resolver conflictos y negociar prioridades entre los interesados. 
+
+Especificación: 
+implica representar y almacenar los conocimientos de los requerimientos en un formato claro, verificable. y de manera persistente y bien organizada
+
+Validación:
+confirma que tiene el conjunto correcto de información de requisitos que permitirá a los desarrolladores crear una solución que satisfaga los objetivos del negocio y gestionar sus cambios
+
+---
+Proceso de la ingeniería de requerimientos herramientas de elicitación 
+Entrevistas: 
+Conversación directa y estructurada con un interesado clave (acá las respuestas son más abiertas)
+
+Encuestas y cuestionarios: 
+Recolección de muchos usuarios de forma escalable (aquí no hay conversación es muy cerrado) 
+
+Observación: 
+Observar al usuario en su contexto real de trabajo (etnografía)
+
+Talleres y grupos focales:
+Sesiones grupales para generar y priorizar requerimientos en conjunto
+
+Análisis de documentos:
+Revisar manuales, normativas o sistemas existentes ya documentados
+
+Prototipado: 
+Mostrar un prototipo para que el ususario reaccione y refine su necesidad. 
+
+Las preguntas bases que se pueden hacer para obtener información son: 
+
+¿Quién?
+Conocer la unidad organizativa, el tipo de trabajo o el cliente al que se refiere el requisito
+
+¿Qué?
+Conocer las tareas que deben realizarse; es deci, requisito funcional
+
+¿Dónde?
+Conocer el tipo de cliente, servidor, etc. en la que se requiere realizar el
+procesamiento que permite conocer aspectos de los requisitos como:
+
+Rendimiento: ¿Tiempo para completar la tarea después de su inicio?
+Orden: ¿Cuál es la secuencia para completar diferentes tareas?
+Período: ¿Cuál es el período de tiempo de tiempo de los datos de transacción al que
+se debe aplicar la lógica de procesamiento?
+
+¿Por qué?
+Conocer la razón detrás del requisito de por qué se necesita el software
+
+¿Cómo?
+Conocer cómo se inician y realizan las tareas y cómo se entregan los resultados. Preguntar cómo determinar los métodos utilizados para entregar la funcionalidad. Se ocupa de comprender la entrada de datos, el
+procesamiento de datos y los mecanismos de difusión de información.
+
+---
+Ejemplo real
+Proceso completo de una universidad en la digitalización de su proceso de inscripción
+
+Elicitación: entrevista a alumnos, coordinadores y personal de caja.
+
+Análisis y acuerdos: negocian entre "inscripción en 1 clic (alumnos) y "validación de adeudos" (finanzas)
+
+especificación: documentan cada requerimiento en un SRS (documento donde se anotan los requerimientos) con criterios de aceptación 
+
+Validación: Revisan el documento con todos los interesados antes de aprobar el diseño 
+
+Un criterio de aceptación podría ser un password fuerte o sea que la password metida cumpla con nuestra definición pero el requerimiento es pedir un password
+
+
