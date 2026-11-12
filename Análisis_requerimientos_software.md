@@ -188,7 +188,7 @@ antes de decidir cómo construirlo. ¿Cuáles son las funciones que debe realiza
 un requerimiento mal definifo e la causa más frecuente de fracaso de proyectos
 involucra directamente usuarios, clientes y otros interesados 
 
-Analista: presenta una necesidad a un problema, el ingeniero en tecnologías mira si es factible o no, aplicando ingeniería de software se presenta una vaidación de requerimientos o software requirement specification (*NOTA PAUUU*)
+Analista: presenta una necesidad a un problema, el ingeniero en tecnologías mira si es factible o no, aplicando ingeniería de software se presenta una vaidación de requerimientos o software requirement specification (**NOTA PAUUU**)
 
 ---
 
@@ -283,4 +283,110 @@ Validación: Revisan el documento con todos los interesados antes de aprobar el 
 
 Un criterio de aceptación podría ser un password fuerte o sea que la password metida cumpla con nuestra definición pero el requerimiento es pedir un password
 
+Una vez realizada la entrevista con el cliente
+y completar las etapas de elicitación y
+análisis con la identificación de los
+requerimientos.
+Se genera la Especificación de
+Requerimientos del Software (SRS) en la etapa de verificación 
 
+SRS es un documento formal que describe la función y los
+requisitos de rendimiento del software. Debe ser estructurado,
+conciso, visto como una caja negra y verificable. Además de
+enumerar todas las condiciones excepcionales posibles.
+
+---
+Requerimientos del Software (SRS) **(software requirement specification)**
+
+Características clave
+
+Cada requerimiento debe poder probarse como cumplido o no,
+lo que se conoce como verificable.
+Incluye secciones como: introducción, descripción general,
+requerimientos específicos y anexos.
+Sirve como contrato formal entre el cliente y el equipo de
+desarrollo.
+Es el principal insumo para la fase de modelación.
+
+Requerimientos del Software (SRS)
+
+Metodologías
+
+IEEE 830 es el estándar internacional que define la estructura recomendada de
+un documento de SRS (Software Requirements Specification), asegurando que
+sea completo, no ambiguo y verificable.
+BABOK (Business Analysis Body of Knowledge) ampliamente utilizado para definir
+y gestionar requisites en Business Analysts
+IREB (International Requirements Engineering Board) se encuentran sus
+recomendaciones en metodologías ágiles
+CMMI (Capability Maturity Model Integration) No define una plantilla SRS, pero
+establece prácticas para asegurar la calidad de los requisitos
+
+Requerimientos del Software (SRS)
+
+Para efectos de clase se consideran los puntos:
+1. Indice
+2. Introducción
+    a Descripción de la Oportunidad de Negocio **(qué problema querémos resolver)**
+    b Descripción de la Solución (software)
+3. Glosario, (**ser específico**_pau_)
+4. Definición de Requerimientos de usuario,
+5. Modelos de Sistema (UML)
+6. Beneficios esperados (qué beneficios quiero)
+7. Evolución del Sistema (Cambio en las necesidades del usuario) (implementaremos un ciclo de vida)
+8. Apéndice
+
+
+UML
+Unified modelling language
+
+Lenguaje gráfico estándar para especificar, visualizar, construir y documentar los artefactos de un sistema de software
+
+características:
+- es una notación para comunicar diseño
+- incluye diagramas estructurales (clases, componentes) y de comportamiento (casos de uso, actividad, secuencia)
+- Se usa principalmente para representar QUÉ hace el sistema desde la perspectiva del usuario
+- facilita la comunicación entre analistas, desarrolladores y clientes con un lenguaje visual común  
+
+q es un obeto (**la instanciación de un objeto**)
+que es una clase 
+
+UML como lenguaje común
+
+en una reunión entre el cliente y un banco y el equipo de desarrollo , un diagrama UML permite que ambas partes "vean el sistema de la misma forma, sin necesidad de 
+**aquí falto presentación el profe no la ha subido**
+
+--- 
+Diagrama de casos de uso 
+Def: Diagrama UML que modela los requerimientos del sistema desde la perspectiva del ususario, mostrando actores, casos de uso y sus relaciones 
+
+Características
+
+tiene un actor (rol que interactúe con el sistma) personita de palito dibujado y actor del sistema externo personita pero con <<sistema>>
+tiene uncaso de uso (óvalo/elipse) y fronttera del sistema rectángulo punteado es el sistema todo lo de adentro le pertenece, asociación (una rayita) es lo que uno actor con caso de uso, inclusión (raya punteada) dice quién incluye a quién, extend flecha punteada dice quien hereda de quién, generalización o una herencia línea con triángulo vacío
+tiene relaciones clave
+es puentre 
+
+Caso de cajero automático
+Un diagrama de casos de uso para un atm identifica claramnete quién interactúa con el sistema que puede hacer antes de diseñar ninguna función
+
+Actor: cliente del banco
+Actor: Banco (sistema externo)
+Relación: <<include>>, retirar efectivo, siemore incluye "autenticar ususario"
+relación <<extend>>, "imprimir comprobante, extiende opcionalmente cualquier transacción 
+
+![alt text](<WhatsApp Image 2026-11-11 at 6.27.33 PM.jpeg>)
+
+elements diagrmaa de actividad
+
+nodo inicial círculo negro
+Acción rectángulo completo
+flujo de control flecha
+nodo de decisión rombo amarillo
+condiciones de guarda, (pones tu condición) no es como true o falseej en caso de que sea nip incorrecto 3 veces retiene la tarjeta
+ó si no hay saldo suficiente, Mostrar mensaje de error 
+
+![alt text](<WhatsApp Image 2026-11-11 at 6.34.32 PM.jpeg>)
+
+
+Cliente
